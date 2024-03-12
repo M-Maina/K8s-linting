@@ -15,6 +15,7 @@ jobs:
       - name: install kubescore
         run: |
           wget https://github.com/zegl/kube-score/releases/download/v1.18.0/kube-score_1.18.0_linux_amd64
+          mv kube-score_1.18.0_linux_amd64 kubescore
           chmod +x kube-score_1.18.0_linux_amd64
           ./kubescore
       
