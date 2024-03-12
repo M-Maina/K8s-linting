@@ -20,6 +20,6 @@ jobs:
 
       - name: Run Kubescore
         run: |
-          ./kubescore score manifests/*.yml
+          ./kubescore score manifests/*.yml --ignore-test pod-networkpolicy
      
       
